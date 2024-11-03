@@ -1,0 +1,28 @@
+{% extends "base.html" %}
+{% block title %} Загрузка файла {% endblock title%}
+{% block content %}
+<div class="jumbotron">
+  <h1 class="display-4">Загрузить файл</h1>
+  <p>Не забывайте о том, что загруженный файл сразу отправляется на почту вашему партнеру!</p>
+  <hr class="my-4">
+  <form method="post" enctype="multipart/form-data">
+    {% csrf_token %}
+    <div class="form-content">
+      <form method="post" enctype="multipart/form-data">
+          {% csrf_token %}
+          <div class="form-row">
+              <div class="col-md-5">
+                  <div class="form-group">
+                      <label class="small mb-1"></label>
+                      {{ form.file }}
+                  </div>
+              </div>
+          </div>
+          <br><br>
+          <button class="btn btn-info" type="submit">Загрузить</button>
+      </form>
+    </div>
+  </form> 
+</div>
+
+{% endblock content %}

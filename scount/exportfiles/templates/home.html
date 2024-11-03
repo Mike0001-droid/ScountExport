@@ -1,0 +1,18 @@
+{% extends "base.html" %}
+{% block title %} Home Page {% endblock title%}
+{% block content %}
+    <div class="jumbotron">
+        <h1 class="display-4">Добро пожаловать, {{ user }} !</h1>
+        
+        <hr class="my-4">
+        <p class="lead">
+            {% if user.is_authenticated %}
+                <a class="btn btn-info" href="{% url 'all_files' %}" role="button">Все файлы</a>
+                <a class="btn btn-info" href="{% url 'upload_file' %}" role="button">Загрузить файл</a>
+            {% else %}
+                <a class="btn btn-info" href="{% url 'login' %}" role="button">Войти</a>
+            {% endif %}
+        </p>
+    </div>
+
+{% endblock content %}

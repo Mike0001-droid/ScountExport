@@ -1,0 +1,26 @@
+{% extends "base.html" %}
+{% block title %} Файлы пользователя {% endblock title%}
+{% block content %}
+<ol class="list-group list-group-numbered">
+    {% if not data %}
+        <li class="list-group-item d-flex justify-content-between align-items-start">
+            <div class="ms-2 me-auto">
+            <div class="fw-bold"></div>
+                Файлов пока нет! Попробуйте <a href="{% url 'upload_file' %}">загрузить файл</a>
+            </div>
+        </li>
+    {% else %}
+        {% for x in data %}
+        <li class="list-group-item d-flex justify-content-between align-items-start">
+            <div class="ms-2 me-auto">
+            <div class="fw-bold"><a href={{x.file.url}}>{{x.file_name}} </a></div>
+                {{x.file_icon}}
+            </div>
+            <span>Дата загрузки: {{ x.upload_date }}</span>
+        </li>
+        {% endfor %}
+        <a class="btn btn-info" href="{% url 'upload_file' %}" role="button">Загрузить еще</a>
+    {% endif %}
+    
+</ol>
+{% endblock %}

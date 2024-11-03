@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <!--Font awesome icons -->
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+
+    <title>{% block title %} {% endblock %} </title>
+</head>
+<body>
+  <div class="container p-3 my-3">
+    <div class="row">
+      <div class="col-md-12">
+        <nav class="navbar navbar-expand-md navbar-light " style="background-color: #f0f5f5">
+          <a href="/">
+            <svg width="140" height="32" viewBox="0 0 140 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <g clip-path="url(#clip0_1353_191576)">
+              <path fill-rule="evenodd" clip-rule="evenodd" d="M23.1865 15.9999C23.1865 19.5689 20.3037 22.4613 16.7466 22.4613C13.1892 22.4613 10.3064 19.5689 10.3064 15.9999C10.3064 12.4305 13.1892 9.53809 16.7466 9.53809C20.3037 9.53809 23.1865 12.4305 23.1865 15.9999ZM24.72 15.9999C24.72 11.5688 21.1625 8.00001 16.7466 8.00001C12.3305 8.00001 8.77345 11.5688 8.77345 15.9999C8.77345 20.4304 12.3305 23.9999 16.7466 23.9999C21.1625 23.9999 24.72 20.4304 24.72 15.9999ZM25.9464 15.9999C25.9464 21.1077 21.8374 25.2303 16.7466 25.2303C11.6557 25.2303 7.5466 21.1077 7.5466 15.9999C7.5466 10.8923 11.6557 6.76906 16.7466 6.76906C21.8374 6.76906 25.9464 10.8923 25.9464 15.9999V15.9999ZM27.1732 15.9999C27.1732 10.2152 22.5117 5.53806 16.7466 5.53806C10.9812 5.53806 6.3197 10.2152 6.3197 15.9999C6.3197 21.7842 10.9812 26.4613 16.7466 26.4613C22.5117 26.4613 27.1732 21.7842 27.1732 15.9999V15.9999ZM28.3999 15.9999C28.3999 22.4613 23.1865 27.6921 16.7466 27.6921C10.3064 27.6921 5.09301 22.4613 5.09301 15.9999C5.09301 9.53809 10.3064 4.30764 16.7466 4.30764C23.1865 4.30764 28.3999 9.53809 28.3999 15.9999ZM29.3202 15.9999C29.3202 9.04581 23.6771 3.3845 16.7466 3.3845C9.81592 3.3845 4.17332 9.04581 4.17332 15.9999C4.17332 22.9534 9.81592 28.6154 16.7466 28.6154C23.6771 28.6154 29.3202 22.9534 29.3202 15.9999V15.9999ZM30.5465 15.9999C30.5465 23.6307 24.352 29.8459 16.7466 29.8459C9.14108 29.8459 2.94642 23.6307 2.94642 15.9999C2.94642 8.36871 9.14108 2.15355 16.7466 2.15355C24.352 2.15355 30.5465 8.36871 30.5465 15.9999ZM31.1599 15.9999C31.1599 8.00001 24.72 1.53808 16.7466 1.53808C8.77345 1.53808 2.333 8.00001 2.333 15.9999C2.333 23.9999 8.77345 30.4613 16.7466 30.4613C24.72 30.4613 31.1599 23.9999 31.1599 15.9999ZM32.3867 15.9999C32.3867 24.6764 25.3945 31.6921 16.7466 31.6921C8.0986 31.6921 1.10631 24.6764 1.10631 15.9999C1.10631 7.32275 8.0986 0.307658 16.7466 0.307658C25.3945 0.307658 32.3867 7.32275 32.3867 15.9999V15.9999ZM32.6934 15.9999C32.6934 7.13829 25.5787 0 16.7466 0C7.9146 0 0.800049 7.13829 0.800049 15.9999C0.800049 24.8615 7.9146 32 16.7466 32C25.5787 32 32.6934 24.8615 32.6934 15.9999Z" fill="url(#paint0_linear_1353_191576)"/>
+              <path d="M51.3857 7.88005V10.1328H49.6961C46.4193 10.1328 44.3201 11.976 43.3985 13.6912C42.8865 14.6384 42.6305 15.7392 42.6305 16.84C42.6305 18.248 42.9633 19.656 43.7569 20.808C45.3953 23.24 47.7249 23.5472 49.4145 23.5472H51.3857V25.8H49.7217C47.2897 25.8 43.6801 25.4672 41.3761 21.6272C40.5057 20.1936 40.1217 18.504 40.1217 16.84C40.1217 13.128 42.2465 10.6704 44.2945 9.41605C45.9329 8.39205 48.0321 7.88005 50.0033 7.88005H51.3857ZM57.2213 25.8H54.8149V7.88005H57.2213V15.4064H58.8341C60.1653 15.4064 61.2405 15.048 62.1877 12.9488L64.4661 7.88005H67.1541L65.1573 12.2576C64.2101 14.3056 63.8005 15.0992 62.6997 15.8672C64.1845 16.1744 66.2837 17.2496 66.2837 21.2176V25.8H63.8773V21.192C63.8773 20.04 63.7749 17.6592 60.7541 17.6592H57.2213V25.8ZM73.2513 25.8H70.8449V14.2288C70.8449 10.7984 73.1745 7.62405 76.9633 7.62405C80.7521 7.62405 83.0817 10.7984 83.0817 14.2288V25.8H80.6753V17.6592H74.1729V15.4064H80.6753V14.28C80.6753 11.8224 79.2161 9.87685 76.9633 9.87685C75.0945 9.87685 73.2513 11.3104 73.2513 14.28V25.8ZM87.2499 7.90565H89.6563V13.4864C89.6563 14.3824 89.7587 15.5088 90.8339 16.2512C91.6019 16.7888 92.6771 16.8656 93.8547 16.8656H96.4403V19.1184H93.9059C92.6771 19.1184 90.9363 19.1184 89.5795 18.2992C87.3523 16.968 87.2499 14.5104 87.2499 13.0512V7.90565ZM88.3251 23.5472H92.7027C93.8803 23.5472 95.2115 23.5216 96.1075 22.9328C97.3363 22.1136 97.3619 20.7824 97.3619 19.8608V7.90565H99.7683V19.2208C99.7683 21.1664 99.7683 23.1888 97.6947 24.6736C96.1587 25.7744 94.4179 25.8 92.7027 25.8H88.3251V23.5472ZM106.436 25.8H104.03V7.88005H106.436V15.4064H114.219V7.88005H116.625V25.8H114.219V17.6592H106.436V25.8ZM119.323 10.1328V7.88005H130.638V10.1328H126.184V25.8H123.778V10.1328H119.323Z" fill="url(#paint1_linear_1353_191576)"/>
+              </g>
+              <defs>
+              <linearGradient id="paint0_linear_1353_191576" x1="0.800049" y1="16" x2="32.6934" y2="16" gradientUnits="userSpaceOnUse">
+              <stop stop-color="#FF8233"/>
+              <stop offset="1" stop-color="#4D41F6"/>
+              </linearGradient>
+              <linearGradient id="paint1_linear_1353_191576" x1="39.2001" y1="19.3" x2="131.2" y2="19.3" gradientUnits="userSpaceOnUse">
+              <stop stop-color="#FF8233"/>
+              <stop offset="1" stop-color="#4D41F6"/>
+              </linearGradient>
+              <clipPath id="clip0_1353_191576">
+              <rect width="138.4" height="32" fill="white" transform="translate(0.800049)"/>
+              </clipPath>
+              </defs>
+              </svg>
+              
+          </a>
+          
+            <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+                <div class="navbar-nav ml-auto">
+                  {% if user.is_authenticated %}
+                    <a href="{% url 'users-profile' %}" class="nav-item nav-link">Профиль</a>
+                    <form action="{% url 'logout' %}" method="post">
+                        {% csrf_token %}
+                        <button type="submit" class="btn btn-info">Выйти</button>
+                    </form>
+                    
+                  {% else %}
+                    <a href="{% url 'login' %}" class="nav-item nav-link">Войти</a>
+                  {% endif %}
+
+                </div>
+            </div>
+        </nav>
+        <!--Any flash messages pop up in any page because this is the base template-->
+        {% if messages %}
+          <div class="alert alert-dismissible" role="alert">
+            {% for message in messages %}
+              <div class="alert alert-{{ message.tags }}">{{ message }}</div>
+            {% endfor %}
+            <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+        {% endif %}
+        {% block content %}{% endblock %}
+      </div>
+    </div>
+  </div>
+
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+    <!-- A plugin for password show/hide  -->
+    <script src="https://unpkg.com/bootstrap-show-password@1.2.1/dist/bootstrap-show-password.min.js"></script>
+
+</body>
+</html>

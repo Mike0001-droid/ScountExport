@@ -1,1 +1,4 @@
 .env/
+scount/media/
+scount/.env
+scount/db.sqlite3
