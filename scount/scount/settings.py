@@ -117,15 +117,15 @@ STATIC_URL = '/static/'
 
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 
-if DEBUG:
-    STATIC_DIR = os.path.join(BASE_DIR, 'static')
-    STATICFILES_DIRS = [
-        STATIC_DIR,
-        '/var/www/ScountExport/scount/static/',
-    ]
-else:
-    STATIC_ROOT = os.path.join(BASE_DIR, 'static/')
-    STATICFILES_FINDERS = (
+
+STATIC_DIR = os.path.join(BASE_DIR, 'static')
+STATICFILES_DIRS = [
+    STATIC_DIR,
+    '/var/www/ScountExport/scount/static/',
+]
+
+STATIC_ROOT = os.path.join(BASE_DIR, 'static/')
+STATICFILES_FINDERS = (
         'django.contrib.staticfiles.finders.FileSystemFinder',
         'django.contrib.staticfiles.finders.AppDirectoriesFinder',
     )
